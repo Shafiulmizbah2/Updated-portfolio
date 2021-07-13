@@ -47,3 +47,41 @@ section{
   font-family: "Lat0","Roboto";
 }
 
+.logobox{
+  padding: 1rem;
+  font-size: 44px;
+  cursor: pointer;
+  
+  .S{ color: $primary; }
+  .A{ color : $secondary }
+
+  @media only screen and(max-width:700px){
+      font-size: 30px;
+      padding: .7rem;
+  }
+}
+
+.btn{
+  font-family: inherit;
+  padding: 15px 45px;
+  font-size: 17px;
+  color: inherit;
+  outline: none;
+  border: none;
+  border-radius: 13px;
+  border: 3px solid $primary;
+  background-color: transparent;
+  transition:  all .3s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &:hover{
+      background-color: $primary;
+      color: $white;
+  }
+
+  @media only screen and(max-width:500px){
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}

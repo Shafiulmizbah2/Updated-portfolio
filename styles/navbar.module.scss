@@ -15,19 +15,7 @@
         align-items: center;
         position: relative;
 
-        .logobox{
-            padding: 1rem;
-            font-size: 44px;
-            cursor: pointer;
-            
-            .S{ color: $primary; }
-            .A{ color : $secondary }
-
-            @media only screen and(max-width:700px){
-                font-size: 30px;
-                padding: .7rem;
-            }
-        }
+        
         .navbox{
             display: flex;
             height: 100%;

@@ -1,0 +1,78 @@
+@import "./variables.scss";
+
+.contact{
+    width: 100%;
+    max-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .layer{
+        max-width: 1140px;
+        padding: 4vh 0;
+        margin: 0 auto;
+        display: flex;
+
+        .form{
+            max-width: 700px;
+            margin: 2vh 5vh;
+            border: 10px solid $primary;
+            text-align: center;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            // flex-direction: column;
+            padding: 3vh 10px;
+            color: $secondary;
+
+            .input{
+                font-family: inherit;
+                font-size: inherit;
+                color: inherit;
+                width: 80%;
+                padding: 10px 20px;
+                border-radius: 10px;
+                outline: none;
+                border: 1px solid $primary;
+                margin-bottom: 20px;
+            }
+
+
+            @media only screen and(max-width:500px){
+                margin: 2vh;
+                font-size: 15px;
+                .input{
+                    width: 95%;
+                }
+            }
+
+            .or{
+                margin: 2vh;
+                position: relative;
+                color: $primary;
+
+                &::after,
+                &::before{
+                    content: "";
+                    height: 1px; 
+                    width: 45%;
+                    background-color: rgba($primary,.8);
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                }
+
+                &::after{ left: 22%; } 
+                &::before { right: -23%; }
+
+            }
+
+            .error{
+                height: 25px;
+                width: 100%;
+                color: red;
+                margin-bottom: 5px;
+            }
+        }        
+    }
+}
