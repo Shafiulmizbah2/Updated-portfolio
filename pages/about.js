@@ -1,13 +1,12 @@
 import React from 'react'
 import Head from 'next/head'
-import {useRouter} from 'next/router'
+import { useRouter } from 'next/router'
 import styles from '../styles/about.module.scss'
-
 import Typical from "react-typical"
 
-const about = () => {
+const About = () => {
     const router =  useRouter();
-
+    
     return (
         <>  
             <Head>
@@ -45,4 +44,4 @@ Working as a “Trainee Software Engineer”.Worked in several projects.</p>
     )
 }
 
-export default about
+export default About;

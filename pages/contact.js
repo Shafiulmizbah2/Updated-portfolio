@@ -3,7 +3,7 @@ import Head from 'next/head'
 import styles from "../styles/contact.module.scss";
 import Logo from "../components/Logo"
 
-const contact = () => {
+const Contact = () => {
     const [newMessage,setNewMessage] = useState({email:"",message : ""});
     const [error,setError] = useState("");
 
@@ -58,4 +58,4 @@ const contact = () => {
     )
 }
 
-export default contact
+export default Contact;

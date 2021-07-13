@@ -4,7 +4,7 @@ import styles from "../styles/projects.module.scss";
 import { useSelector } from 'react-redux';
 import { useRouter } from 'next/router'
 
-const projects = () => {
+const Projects = () => {
     const router = useRouter();
     const { work } = useSelector((state)=> state.general);
     
@@ -60,4 +60,4 @@ const projects = () => {
     )
 }
 
-export default projects
+export default Projects;
