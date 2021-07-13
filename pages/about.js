@@ -6,7 +6,7 @@ import styles from '../styles/about.module.scss'
 import Typical from "react-typical"
 
 const about = () => {
-    const {push} =  useRouter();
+    const router =  useRouter();
 
     return (
         <>  
@@ -33,7 +33,7 @@ const about = () => {
                         </h3>
                         <p>Studing B.Sc in Computer Science & Engineering (last year).
 Working as a “Trainee Software Engineer”.Worked in several projects.</p>
-                        <button className={styles.btn} onClick={()=> push("/projects")}>See projects</button>
+                        <button className={styles.btn} onClick={()=> router.push("/projects")}>See projects</button>
 
                     </div>
                     <div className={styles.right}>

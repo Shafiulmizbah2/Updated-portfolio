@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import { useRouter } from 'next/router'
 
 const projects = () => {
-    const {push} = useRouter();
+    const router = useRouter();
     const { work } = useSelector((state)=> state.general);
     
 
@@ -35,7 +35,7 @@ const projects = () => {
 
                                         return(
                                             <div className={styles.card} key={card.id} style={{backgroundImage : `url(${card.img})` }}
-                                            onClick={()=> push(card.link)}
+                                            onClick={()=> router.push(card.link)}
                                             >
                                                 <div>
                                                     <p>{card.name}</p>
