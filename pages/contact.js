@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
-import Head from 'next/head'
+import Head from 'next/head';
 import styles from "../styles/contact.module.scss";
 import Logo from "../components/Logo"
+import { useRouter } from 'next/router';
+
+const pofile = "https://www.facebook.com/profile.php?id=100012008747536";
 
 const Contact = () => {
+    const { push } = useRouter();
     const [newMessage,setNewMessage] = useState({email:"",message : ""});
     const [error,setError] = useState("");
 
@@ -48,9 +52,9 @@ const Contact = () => {
                         
                         <button className="btn">Send message</button>
                         <div className={styles.or}>Or</div>
-                        <div className={styles.social}>
-                            [ icons goes here! ]
-                        </div>
+                        <p className={styles.social} onClick={()=> push(pofile)}>
+                            Connect with <span>Facebook</span> 
+                        </p>
                     </form>
                 </div>
             </section>
