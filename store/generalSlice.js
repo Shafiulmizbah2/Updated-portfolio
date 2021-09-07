@@ -39,6 +39,12 @@ const initialState = {
             name: "Kids Creation tv",
             img: "./img/kids.png",
           },
+          {
+            id: 92,
+            link: "exp://exp.host/@shafiul/meals",
+            name: "Meals",
+            img: "./img/Meals.jpg",
+          },
         ],
       },
       {
@@ -94,10 +100,22 @@ const initialState = {
         title: "React Native projects",
         work: [
           {
+            id: 92,
+            link: "exp://exp.host/@shafiul/meals",
+            name: "Meals",
+            img: "./img/Meals.jpg",
+          },
+          {
             id: 91,
             link: "https://expo.dev/@shafiul/mealsToGo",
             name: "Meals to go",
             img: "./img/mealstogo.jpg",
+          },
+          {
+            id: 93,
+            link: "exp://exp.host/@shafiul/DoneWithIt",
+            name: "Done With it",
+            img: "./img/donewithit.jpg",
           },
         ],
       },
