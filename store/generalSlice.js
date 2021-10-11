@@ -9,6 +9,12 @@ const initialState = {
         title: "featured work",
         work: [
           {
+            id: 0101,
+            link: "https://shafiul-linkedin-clone.netlify.app/",
+            name: "Linkedin Clone",
+            img: "./img/linkedinClone.png",
+          },
+          {
             id: 0,
             link: "https://crown-e-commerce.netlify.app/",
             name: "Crown",
@@ -56,6 +62,12 @@ const initialState = {
             link: "https://crown-e-commerce.netlify.app/",
             name: "Crown",
             img: "./img/crown.png",
+          },
+          {
+            id: 0501,
+            link: "https://shafiul-linkedin-clone.netlify.app/",
+            name: "Linkedin Clone",
+            img: "./img/linkedinClone.png",
           },
           {
             id: 6,
