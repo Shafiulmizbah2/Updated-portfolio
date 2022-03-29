@@ -9,7 +9,7 @@ import { db } from "../utils/firebase.config";
 import styles from "../styles/contact.module.scss";
 import Logo from "../components/Logo";
 import { useDispatch, useSelector } from "react-redux";
-import { Login } from "../store/authSlice";
+import { Login as signIn } from "../store/authSlice";
 import router from "next/router";
 
 const validfationSchema = Yup.object().shape({
@@ -17,7 +17,7 @@ const validfationSchema = Yup.object().shape({
   password: Yup.string().required().label("Password"),
 });
 
-const login = () => {
+const Login = () => {
   const dispatch = useDispatch();
   const { error, user } = useSelector((state) => state.auth);
 
@@ -38,7 +38,7 @@ const login = () => {
           <Formik
             initialValues={{ email: "", password: "" }}
             onSubmit={async (values, { setSubmitting }) => {
-              await dispatch(Login(values.email, values.password));
+              await dispatch(signIn(values.email, values.password));
               setSubmitting(false);
             }}
             validationSchema={validfationSchema}
@@ -103,4 +103,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;
