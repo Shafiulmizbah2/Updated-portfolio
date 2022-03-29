@@ -1,0 +1,127 @@
+@import "variables.scss";
+
+.f-w-30 {
+  width: 30rem;
+}
+
+.form {
+  height: auto;
+  padding: 4vh 1.5vw 8vh 1.5vw;
+  margin: 1rem 0;
+  // background-image: linear-gradient(120deg, $primary-light, $primary-dark);
+  border-radius: 2rem;
+  color: $white;
+  box-shadow: $shadow-1;
+  font-weight: bold;
+
+  &-title {
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+
+  &-text {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    font-weight: lighter;
+  }
+
+  &-item {
+    width: 100%;
+    margin-bottom: 1rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &-group {
+    width: 49%;
+    min-width: 20rem;
+    padding-right: 2%;
+    margin-bottom: 2rem;
+    border-right: 2px solid $white;
+
+    &:last-of-type {
+      border: none;
+      padding-right: 0;
+    }
+
+    @media only screen and (max-width: 855px) {
+      border-right: none;
+      width: 100%;
+    }
+  }
+
+  &-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 855px) {
+      flex-direction: column;
+    }
+  }
+
+  &-label {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  &-input {
+    font-family: inherit;
+    font-size: inherit;
+    width: 100%;
+    margin-top: 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  &-error {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-weight: lighter;
+    margin-bottom: 0.5rem;
+    color: orangered;
+  }
+
+  &-btn {
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    color: $white;
+    font-weight: bold;
+    // background-color: $primary-light;
+    box-shadow: $shadow-1;
+    padding: 0.8rem 5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      box-shadow: $shadow-2;
+    }
+
+    &:active {
+      box-shadow: $shadow-1;
+    }
+  }
+
+  .btn-full {
+    width: 100%;
+  }
+
+  &-footer {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 500px) {
+    width: 100% !important;
+  }
+}

@@ -1,107 +1,125 @@
 @import "./variables.scss";
 
-.projects{
-    padding: 20px 0;
-    overflow-y: auto;
-    
-    .layer{
-        height: 100%;
-        max-width: 1140px;
-        padding: 10px;
-        margin: 0 auto;
+.projects {
+  padding: 20px 0;
+  overflow-y: auto;
 
-        .catagory{
+  .layer {
+    height: 100%;
+    max-width: 1140px;
+    padding: 10px;
+    margin: 0 auto;
+    position: relative;
+
+    .catagory {
+      width: 100%;
+      margin-bottom: 5vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .hero-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .hero {
+        font-size: 40px;
+        font-weight: 300;
+        text-transform: capitalize;
+        color: $primary;
+        margin-bottom: 2vh;
+        padding-left: 10px;
+      }
+
+      .cardbox {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .card {
+          width: 250px;
+          height: 200px;
+          margin: 10px;
+          background-color: rgba($secondary, 0.2);
+          box-shadow: 5px 5px 5px rgba($secondary, 0.4);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border-radius: 5px;
+          filter: contrast(0.9);
+          cursor: pointer;
+          position: relative;
+          outline: 7px solid transparent;
+          outline-offset: 7px;
+          transition: all 0.2s ease-in;
+
+          &:hover {
+            outline: 7px solid $primary;
+          }
+
+          div {
+            position: absolute;
+            bottom: 0;
+            left: 0;
             width: 100%;
-            margin-bottom: 5vh;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            padding: 10px 0;
+            background-color: rgba($secondary, 0.8);
+            transition: all 0.3s ease-in-out;
 
-            .hero{
-                font-size: 40px;
-                font-weight: 300;
-                text-transform: capitalize;
-                color: $primary;
-                margin-bottom: 2vh;
-                padding-left: 10px;
+            p {
+              color: $white;
+              text-align: center;
+              text-transform: capitalize;
             }
-
-            .cardbox{
-                width: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                flex-wrap: wrap;
-
-                .card{
-                    width: 250px;
-                    height: 200px;
-                    margin: 10px;
-                    background-color: rgba($secondary,.2);
-                    box-shadow: 5px 5px 5px rgba($secondary,.4);
-                    background-position: center;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    border-radius: 5px;
-                    filter: contrast(.9);
-                    cursor: pointer;
-                    position: relative;
-                    outline: 7px solid transparent;
-                    outline-offset: 7px;
-                    transition: all .2s ease-in;
-                    
-                    &:hover{
-                        outline: 7px solid $primary;
-                    }
-
-                    div{
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        width: 100%;
-                        padding: 10px 0;
-                        background-color: rgba($secondary,.8);
-                        transition: all .3s ease-in-out;
-
-                        p{
-                            color: $white;
-                            text-align: center;
-                            text-transform: capitalize;
-                        }
-                        
-                    }
-                    
-
-                }
-            }
-
-            @media only screen and(max-width:800px){
-                .hero{
-                    font-size: 30px;
-                    padding-left: 10px;
-                }
-
-                .cardbox{
-
-                    .card{
-                        width: 200px;
-                        height: 150px;
-                        margin: 8px;
-                    }
-                }
-            }
-
-            @media only screen and(max-width:455px){
-                .hero{ align-self: center;}
-                .cardbox{
-                    justify-content: center;
-                    .card{
-                        min-width: 80%;
-                        min-height: 150px;
-                        margin: 8px;
-                    }
-                }
-            }
+          }
         }
+      }
+
+      @media only screen and(max-width:800px) {
+        .hero {
+          font-size: 30px;
+          padding-left: 10px;
+        }
+
+        .cardbox {
+          .card {
+            width: 200px;
+            height: 150px;
+            margin: 8px;
+          }
+        }
+      }
+
+      @media only screen and(max-width:455px) {
+        .hero {
+          align-self: center;
+        }
+        .cardbox {
+          justify-content: center;
+          .card {
+            min-width: 80%;
+            min-height: 150px;
+            margin: 8px;
+          }
+        }
+      }
     }
+  }
+
+  .addBtn {
+    display: inline-block;
+    color: $primary;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 1rem;
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
 }

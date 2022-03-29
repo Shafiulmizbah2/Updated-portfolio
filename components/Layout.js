@@ -1,16 +1,18 @@
-import React from 'react'
-import Header from './Header'
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { authStateChange } from "../store/authSlice";
+import Header from "./Header";
 
 const Layout = (props) => {
-    return (
-        <>
-            <Header />
-            <main>
-                {props.children}
-            </main>
-            
-        </>
-    )
-}
+  const dispatch = useDispatch();
+  useEffect(() => dispatch(authStateChange()), []);
 
-export default Layout
+  return (
+    <>
+      <Header />
+      <main>{props.children}</main>
+    </>
+  );
+};
+
+export default Layout;
