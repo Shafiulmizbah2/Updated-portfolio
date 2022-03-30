@@ -33,8 +33,11 @@ export default function Home() {
                     1500,
                     "a Software Engineer",
                     1500,
-
-                    "a React / React Native developer",
+                    "a React developer",
+                    1500,
+                    "React Native developer",
+                    1500,
+                    "Next JS developer",
                     1500,
                   ]}
                 />
