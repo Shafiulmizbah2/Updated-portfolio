@@ -29,16 +29,7 @@ const Navbox = () => {
           Home
         </Link>
       </li>
-      <li
-        className={
-          pathname === "/about" ? ` active ${styles.navitem}` : styles.navitem
-        }
-        onClick={() => dispatch(toggleMenu())}
-      >
-        <Link href="/about" className={styles.navlink}>
-          About
-        </Link>
-      </li>
+
       <li
         className={
           pathname === "/projects"
@@ -63,7 +54,13 @@ const Navbox = () => {
       </li>
 
       {auth.user ? (
-        <li className={styles.navitem} onClick={() => dispatch(Logout())}>
+        <li
+          className={styles.navitem}
+          onClick={() => {
+            dispatch(Logout());
+            dispatch(toggleMenu());
+          }}
+        >
           <a className={styles.navlink}>Logout</a>
         </li>
       ) : (
@@ -71,7 +68,10 @@ const Navbox = () => {
           className={
             pathname === "/login" ? ` active ${styles.navitem}` : styles.navitem
           }
-          onClick={() => router.push("/login")}
+          onClick={() => {
+            dispatch(toggleMenu());
+            router.push("/login");
+          }}
         >
           <a className={styles.navlink}>Login</a>
         </li>
