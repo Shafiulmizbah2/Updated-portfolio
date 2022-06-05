@@ -31,23 +31,26 @@ export default function Home() {
                   steps={[
                     "Shafiul Azim",
                     1500,
-                    "a Software Engineer",
-                    1500,
                     "a React developer",
                     1500,
                     "a React Native developer",
                     1500,
                     "Next JS developer",
                     1500,
+                    "a Fullstack developer",
+                    1500,
+                    "a Software Engineer",
+                    1500,
                   ]}
                 />
               </span>
             </h3>
             <p style={{ lineHeight: 1.5, letterSpacing: "1px" }}>
-              Studing B.Sc in Computer Science & Engineering (last year). I had
-              around 2 years of experience working with React eco-system.As well
-              as React Native and Next Js.I worked in different projects as per
-              company requirement.I love to enlarge my skills.
+              Studing B.Sc in Computer Science & Engineering (last semester). I
+              had around 2 years of experience working with React eco-system.As
+              well as React Native and Next Js,Node.js & Express.js as well as
+              PHP.I worked in different projects as per company requirement.I
+              love to enlarge my skills.
             </p>
             <div className={styles.actionContainer}>
               <button
