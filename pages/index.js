@@ -35,7 +35,7 @@ export default function Home() {
                     1500,
                     "a React Native developer",
                     1500,
-                    "Next JS developer",
+                    "a Next JS developer",
                     1500,
                     "a Fullstack developer",
                     1500,
