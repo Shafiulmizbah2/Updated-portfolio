@@ -47,10 +47,10 @@ export default function Home() {
             </h3>
             <p style={{ lineHeight: 1.5, letterSpacing: "1px" }}>
               Studing B.Sc in Computer Science & Engineering (last semester). I
-              had around 2 years of experience working with React eco-system.As
-              well as React Native and Next Js,Node.js & Express.js as well as
-              PHP.I worked in different projects as per company requirement.I
-              love to enlarge my skills.
+              had around 1.5 years of experience working with React
+              eco-system.As well as React Native and Next Js,Node.js &
+              Express.js as well as PHP.I worked in different projects as per
+              company requirement.I love to enlarge my skills.
             </p>
             <div className={styles.actionContainer}>
               <button
